@@ -36,7 +36,9 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![Not-Found-page-Desktop-version](https://github.com/AdityaChowdhury2/devChallanges/assets/62154790/c4bd99ca-5ac7-44ae-9308-4822bb2ee4b8)
+![Not-Found-page-Mobile-version](https://github.com/AdityaChowdhury2/devChallanges/assets/62154790/87abdc4e-f1aa-468f-8cf7-60214146022e)
+
 
 Here I build the 404 Not Found page for two screen sizes.
 
