@@ -1,0 +1,94 @@
+body{
+    font-family: 'Space Mono', monospace;
+    max-width: 1440px;
+    margin: 10px auto;
+}
+header{
+    font-family: 'Inconsolata', monospace;
+    width: 95%;
+    color: #333;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -1.92px;
+    text-transform: uppercase;
+}
+.flex-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex-container div{
+    width: 45%;
+    padding: 20px;
+}
+.flex-container div> img{
+    width: 80%;
+}
+.title{
+    color:  #333;
+    font-size: 64px;
+    font-weight: 700;
+    letter-spacing: -2.24px;
+    
+}
+.description{
+    margin-top: 36px;
+    color: #4F4F4F;
+    font-size: 24px;
+    letter-spacing: -0.84px;
+    width: 70%;
+}
+.btn{
+    margin-top: 64px;
+    background-color: #333333;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -0.49px;
+    text-transform: uppercase;
+    padding: 25px 40px;
+}
+footer{
+    margin-top: 50px;
+    color: #BDBDBD;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+}
+.name{
+    text-transform: uppercase;
+}
+
+
+/* Responsive for mobile devices */
+
+
+@media screen and (max-width: 576px) {
+header{
+    margin: 0 auto;
+}
+    .flex-container{
+        flex-direction: column;
+        
+    }
+    .flex-container div{
+        width: auto;
+        padding: 10px 20px;
+    }
+    .flex-container div>img{
+        width: 100%;
+    }
+    .title{
+        font-size: 48px;
+        letter-spacing: -1.68px;
+    }
+    .description{
+        font-size: 18px;
+        letter-spacing: -0.63px;
+        width: 80%;
+    }
+    footer{
+        padding: 0 20px;
+    }
+}
