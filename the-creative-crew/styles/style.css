@@ -1,0 +1,71 @@
+body{
+    max-width: 760px;
+    margin: 0 auto;
+}
+header {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    padding: 0 20px;
+}
+header h2, header div> h4{
+    margin-top: 10px;
+}
+header div{
+    width: 45%;
+}
+header div> h4{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+header div>p{
+    margin-top: 10px;
+    font-size: 18px;
+    padding-right: 20px;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    padding: 0 20px;
+}
+ .intro{
+    display: flex;
+}
+.intro img{
+    /* display: none; */
+    width: 90%;
+}
+.intro p{
+    writing-mode: vertical-rl;
+    text-orientation: sideways-right;
+    margin-top: 10px; 
+    margin-left: 10px;
+    font-size: 14px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.item-2,.item-5{
+    margin-top: 80px;
+}
+.card h4{
+    margin-top: 16px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+@media screen and (max-width:576px){
+    header {
+        flex-direction: column;
+        
+    }
+    header div{
+        width: auto;
+    }
+    .grid-container{
+grid-template-columns: repeat(2,1fr);
+    }
+}
