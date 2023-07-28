@@ -1,0 +1,15 @@
+body{
+    color:white;
+    max-width: 1280px;
+    margin: 0 auto;
+    font-family: 'Crimson Pro', serif;
+}
+
+nav> h5{
+    text-transform:uppercase;
+    font-weight: 200;
+    font-size: 14px;
+    border: 1px solid #fff;
+    padding: 8px;
+    max-width:max-content;
+}
