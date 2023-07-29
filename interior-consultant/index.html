@@ -8,19 +8,51 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200;400;500;700&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200;400;500;700&family=Lora:ital,wght@0,500;0,600;0,700;1,400&family=Montserrat:wght@400;500;600;700&display=swap"
         rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>Interior Consultant</title>
 </head>
 
 <body style="background-color: #181719;">
     <header>
-        <nav>
+        <nav class="navbar">
             <h5>This interior</h5>
+            <input type="checkbox" name="" id=" " class="toggle-menu">
+            <div class="hamburger"></div>
+            <ul class="menu">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Collection</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
         </nav>
     </header>
+    <main>
+        <div class="main-container">
+            <div class="main-content">
+                <h1>Modern interior</h1>
+                <p>A full-Service residential & commercial interior design and staging company offering professional
+                    organizing & eco-services.</p>
+                <a href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="main-image">
+                <img src="images/photo1.png" alt="interior-design">
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>

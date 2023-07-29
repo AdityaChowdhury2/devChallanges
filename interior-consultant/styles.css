@@ -13,3 +13,161 @@ nav> h5{
     padding: 8px;
     max-width:max-content;
 }
+
+.navbar{
+    position: relative;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hamburger{
+    position: relative;
+    width: 25px;
+    height: 3px;
+    background-color: wheat;
+    border-radius: 20px;
+    z-index: 3;
+}
+.hamburger::after{
+    content: '';
+    position: absolute;
+    top: 10px;
+    width: 20px;
+    height: 3px;
+    right: 0;
+    background-color: wheat;
+    border-radius: 20px;
+}
+.hamburger::before{
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    width: 20px;
+    height: 3px;
+    background-color: wheat;
+    border-radius: 20px;
+}
+.toggle-menu,.hamburger{
+    display: none;
+}
+
+.toggle-menu{
+    position: absolute;
+    right: 10px;
+    z-index: 4;
+    opacity: 0;
+}
+
+
+
+.menu{
+    display: flex;
+    gap: 50px;
+    flex-direction: row;
+}
+.menu li{
+    list-style: none;
+
+}
+.menu li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+.menu li a:focus{
+    border-bottom: 2px solid #fff;
+}
+
+
+
+.main-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.main-content{
+    width: 32%;
+}
+.main-content h1{
+    font-family: 'Lora', serif;
+}
+.main-content p {
+    font-family: 'Montserrat', sans-serif;
+    margin: 48px auto ;
+    font-size: 24px;
+}
+.main-content a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    gap: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-image{
+    display: flex;
+    justify-content: flex-end;
+    width: 75%;
+}
+.main-image img{
+    width: 80%;
+}
+
+
+
+.navbar input:checked ~ .hamburger{
+    background-color: transparent;
+}
+.navbar input:checked ~ .hamburger::after{
+    transform: rotate(45deg);
+    top: 0;
+    width: 25px;
+}
+.navbar input:checked ~ .hamburger::before{
+    transform: rotate(-45deg);
+    width: 25px;
+    top: 0;
+}
+
+
+
+@media screen and (max-width:1024px){
+    .toggle-menu,.hamburger{
+        display: block;
+    }
+    .menu{
+        flex-direction: column;
+        position: absolute;
+        background-color: #181719;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        right: 100vw;
+        top: 0;
+        margin-top: 0;
+    }
+    input:checked ~ .menu{
+        right: 0;
+    }
+    .main-container{
+        flex-direction: column;
+        padding: 0 10px;
+    }
+    .main-content,.main-image{
+        width: 100%;
+    }
+    .main-image img{
+        width: 100%;
+    }
+    
+}
